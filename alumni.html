@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+<title>Daftar Alumni SMA N 2 Magetan</title>
+</head>
+<body>
+<!--header-->
+<div class="topnav" id="myTopnav">
+  <div class="row">
+    <div class="col">
+      <a href="k2.php">Sekolah</a>
+      <a href="biodata.php">Profil</a>
+      <div class="dropdown">
+        <button class="dropbtn">Kesiswaan
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="kehadiran.html">Kehadiran</a>
+          <a href="jadwal.html">Jadwal Pelajaran</a>
+          <a href="diskusi.html">Diskusi</a>
+        </div>
+      </div>
+      <a href="sman2magetan.sch.id/home/album">Gallery</a>
+      <a href="nilai.html">Nilai</a>
+      <div class="dropdown active">
+          <button class="dropbtn">Informasi
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="info.html">Notifikasi</a>
+            <a href="http://sman2magetan.sch.id">Web Sekolah</a>
+            <a href="https://bukusekolahdigital.com">Buku Online</a>
+            <a href="https://id.wikipedia.org/wiki/Daftar_perguruan_tinggi_di_Indonesia">Perguruan Tinggi</a>
+            <a href="alumni.html">Daftar Alumni</a>
+          </div>
+        </div>
+      <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+    <div class="kanan">
+      <a href="masuk.php">keluar</a>
+    </div>
+  </div>
+
+</div>
+
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+<!--end header-->
+
+
+<!--menu-->
+<div class="tablinkfull">Daftar Alumni SMA N 2 Magetan</div>
+ <div class="container">
+        <div class="row">
+                <div class="tengah">
+                    <select class="form-control" name="kelas">
+                        <option value="">Pilih Angkatan</option>
+                        <option value="1">2016/2017</option>
+                        <option value="2">2015/2016</option>
+                        <option value="3">2015/2014</option>
+                    </select>
+                    </div>
+          </div>
+          <br>
+          <table id="customers">
+                <tr>
+                    <th>No</th>
+                    <th>NIS</th>
+                  <th>Nama</th>
+                  <th>Tahun Lulus</th>
+                  <th>Jurusan</th>
+                  <th>No. HP</th>
+                </tr>
+              </table>
+ </div>
+
+<!--end Menu-->
+
+<!--footer-->
+<div class="footer">
+  <p>@ 2018 | SMA N 2 Magetan </p>
+</div>
+<!--end footer-->
+</body>
+</html>

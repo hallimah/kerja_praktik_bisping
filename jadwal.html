@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+<title>Jadwal Mata Pelajaran</title>
+</head>
+<body>
+<!--header-->
+<div class="topnav" id="myTopnav">
+  <div class="row">
+    <div class="col">
+      <a href="k2.php">Sekolah</a>
+      <a href="biodata.php">Profil</a>
+      <div class="dropdown active">
+        <button class="dropbtn">Kesiswaan
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="kehadiran.html">Kehadiran</a>
+          <a href="jadwal.html">Jadwal Pelajaran</a>
+          <a href="diskusi.html">Diskusi</a>
+        </div>
+      </div>
+      <a href="sman2magetan.sch.id/home/album">Gallery</a>
+      <a href="nilai.html">Nilai</a>
+      <div class="dropdown">
+          <button class="dropbtn">Informasi
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="info.html">Notifikasi</a>
+            <a href="http://sman2magetan.sch.id">Web Sekolah</a>
+            <a href="https://bukusekolahdigital.com">Buku Online</a>
+            <a href="https://id.wikipedia.org/wiki/Daftar_perguruan_tinggi_di_Indonesia">Perguruan Tinggi</a>
+            <a href="alumni.html">Daftar Alumni</a>
+          </div>
+        </div>
+      <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+    <div class="kanan">
+      <a href="masuk.php">keluar</a>
+    </div>
+  </div>
+
+</div>
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+
+<!--end header-->
+
+<!--isi-->
+<div class="tablinkfull">Jalwal Mata Pelajaran</div>
+<div class="tengah">
+        <div class="row">
+                <div class="column2"  >
+                  <p>Nama Siswa</p>
+                  <p>Kelas</p>
+                  <p>Wali Kelas</p>
+                  <p>Jadwal</p>
+                  <p>Semester</p>
+                </div>
+                <div class="column2">
+                    <p>:</p>
+                    <p>:</p>
+                    <p>:</p>
+                    <P>:</P>
+                    <p>:</p>
+                </div>
+                <div class="column2">
+                  <p>Some text..</p>
+                  <p>Some text..</p>
+                  <p>Some text..</p>
+                  <select class="form-control" name="kelas">
+                        <option value="">Jadwal</option>
+                        <option value="1">Harian</option>
+                        <option value="2">UTS</option>
+                        <option value="3">UAS</option>
+                    </select>
+                    <br>
+                  <select class="form-control" name="kelas">
+                        <option value="">Semester</option>
+                        <option value="1">Ganjil</option>
+                        <option value="2">Genap</option>
+                    </select>
+                    <div class="jarak">
+                            <br>
+                            <!--modal unduh-->
+                            <button onclick="document.getElementById('id01').style.display='block'" class="but" style="width:auto;">Unduh</button>
+                    </div>
+                </div>
+            </div>
+</div>
+
+      <div class="container">
+            <br>
+            <h2>Senin</h2>
+            <table id="customers">
+              <tr>
+                  <th>Jam</th>
+                  <th>Mata Pelajaran</th>
+                <th>Guru Pengampu</th>
+              </tr>
+            </table>
+            <h2>Selasa</h2>
+            <table id="customers">
+              <tr>
+                  <th>Jam</th>
+                <th>Mata Pelajaran</th>
+                <th>Guru Pengampu</th>
+              </tr>
+            </table>
+            <h2>Rabu</h2>
+            <table id="customers">
+              <tr>
+                  <th>Jam</th>
+                <th>Mata Pelajaran</th>
+                <th>Guru Pengampu</th>
+              </tr>
+            </table>
+            <h2>Kamis</h2>
+            <table id="customers">
+              <tr>
+                  <th>Jam</th>
+                <th>Mata Pelajaran</th>
+                <th>Guru Pengampu</th>
+              </tr>
+            </table>
+            <h2>Jum'at</h2>
+            <table id="customers">
+              <tr>
+                  <th>Jam</th>
+                <th>Mata Pelajaran</th>
+                <th>Guru Pengampu</th>
+              </tr>
+            </table>
+            <h2>Sabtu</h2>
+            <table id="customers">
+              <tr>
+                  <th>Jam</th>
+                <th>Mata Pelajaran</th>
+                <th>Guru Pengampu</th>
+              </tr>
+            </table>
+
+      </div>
+
+      <div id="id01" class="modal">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <form class="modal-content" action="/action_page.php">
+          <div class="container">
+            <center><h1>Jadwal Mata Pelajaran</h1>
+              <h2>SMA N 2 Magetan</h2></center>
+            <hr>
+            <table id="customers">
+              <tr>
+                  <th>Mata Pelajaran</th>
+                  <th>Hadir</th>
+                <th>Izin</th>
+                <th>Sakit</th>
+                <th>Alfa</th>
+              </tr>
+            </table>
+      <br>
+            <div class="clearfix">
+              <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+              <button type="submit" class="but">Unduh</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <br>
+      <script>
+      // Get the modal
+      var modal = document.getElementById('id01');
+
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function(event) {
+          if (event.target == modal) {
+              modal.style.display = "none";
+          }
+      }
+      </script>
+      <!--end modal unduh-->
+<!--end isi-->
+
+<!--footer-->
+<div class="footer">
+    <p>@ 2018 | SMA N 2 Magetan </p>
+  </div>
+  <!--end footer-->
+</body>
+</html>
